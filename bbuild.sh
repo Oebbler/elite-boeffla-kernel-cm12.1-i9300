@@ -10,7 +10,7 @@
 # Parameters to be configured manually
 #######################################
 
-BOEFFLA_VERSION="4.0-test-CM12.1-NG-i9300"
+BOEFFLA_VERSION="4.0.1.1-elite-testing-OC_2.0GHz-CM12.1-i9300-selfmade"
 EXTENDED_CMDLINE=""
 
 TOOLCHAIN="/opt/toolchains/arm-eabi-4.8/bin/arm-eabi-"
@@ -55,7 +55,7 @@ SMB_SHARE_BACKUP=""
 SMB_FOLDER_BACKUP=""
 SMB_AUTH_BACKUP=""
 
-NUM_CPUS="5"	# number of cpu cores used for build
+NUM_CPUS="8"	# number of cpu cores used for build
 
 
 #######################################
