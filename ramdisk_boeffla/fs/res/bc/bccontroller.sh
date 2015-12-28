@@ -50,7 +50,7 @@ if [ "lov_gpu_freq_profiles" == "$1" ]; then
 fi
 
 if [ "lov_gpu_volt_profiles" == "$1" ]; then
-	echo "No undervolting;undervolt -25mV;undervolt -50mV;undervolt -75mV;undervolt -100mV;undervolt light;undervolt medium;undervolt heavy;overvolt +25mV;overvolt +50mV;overvolt +75mV;overvolt +100mV"
+	echo "No undervolting;undervolt -25mV;undervolt -50mV;undervolt -75mV;undervolt -100mV;undervolt -125mV;undervolt -150mV;undervolt -175mV;undervolt -200mV;undervolt light;undervolt medium;undervolt heavy;overvolt +25mV;overvolt +50mV;overvolt +75mV;overvolt +100mV"
 	exit 0
 fi
 
