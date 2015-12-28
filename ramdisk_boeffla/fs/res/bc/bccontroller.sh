@@ -323,7 +323,7 @@ fi
 
 if [ "param_cpu_uv" == "$1" ]; then
 	# CPU UV min/max/steps
-	echo "600;1500;25"
+	echo "600;1600;10"
 	exit 0
 fi
 
@@ -351,7 +351,7 @@ fi
 
 if [ "param_early_suspend_delay" == "$1" ]; then
 	# Early suspend delay min/max/steps
-	echo "0;700;25"
+	echo "0;5000;10"
 	exit 0
 fi
 
@@ -363,11 +363,11 @@ fi
 
 if [ "param_charge_rates" == "$1" ]; then
 	# AC charge min/max/steps
-	echo "100;1600;25;"
+	echo "25;2100;25;"
 	# USB charge min/max/steps
-	echo "0;1600;25;"
+	echo "25;2100;25;"
 	# Wireless charge min/max/steps
-	echo "100;1000;25"
+	echo "25;2100;25"
 	exit 0
 fi
 
