@@ -10,10 +10,10 @@
 # Parameters to be configured manually
 #######################################
 
-BOEFFLA_VERSION="4.0.2-elite-testing-OC_2.0GHz-CM12.1-i9300-selfmade"
+BOEFFLA_VERSION="4.0.3.0-elite-testing-OC_2.0GHz-CM12.1-i9300-selfmade"
 EXTENDED_CMDLINE=""
 
-TOOLCHAIN="/opt/toolchains/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-"
+TOOLCHAIN="/opt/toolchains/gcc-linaro-5.2-2015.11-x86_64_arm-eabi/bin/arm-eabi-"
 
 COMPILE_DTB="n"
 MODULES_IN_SYSTEM="y"
