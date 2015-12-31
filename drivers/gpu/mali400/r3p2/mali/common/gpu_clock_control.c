@@ -33,24 +33,6 @@ typedef struct mali_dvfs_tableTag{
 
 extern mali_dvfs_table mali_dvfs[MALI_STEPS];
 
-/* define external files that contain int-values for frequencies or thresholds */
-
-extern int step0_clk;
-extern int step1_clk;
-extern int step2_clk;
-extern int step3_clk;
-extern int step4_clk;
-
-extern int step0_up;
-extern int step1_up;
-extern int step2_up;
-extern int step3_up;
-
-extern int step1_down;
-extern int step2_down;
-extern int step3_down;
-extern int step4_down;
-
 static ssize_t gpu_clock_show(struct device *dev, struct device_attribute *attr, char *buf) {
         return sprintf(buf, "Step0: %d\nStep1: %d\nStep2: %d\nStep3: %d\nStep4: %d\n"
                                                 "Threshold0-1/up-down: %d%% %d%%\n"
@@ -114,23 +96,6 @@ static ssize_t gpu_clock_store(struct device *dev, struct device_attribute *attr
                                 mali_dvfs[i].clock=g[i];
                 }
         }
-
-/*define files that contain int-values for frequencies and thresholds*/
-  step0_clk = mali_dvfs[0].clock;
-  step1_clk = mali_dvfs[1].clock;
-  step2_clk = mali_dvfs[2].clock;
-  step3_clk = mali_dvfs[3].clock;
-  step4_clk = mali_dvfs[4].clock;
-
-  step0_up = mali_dvfs[0].upthreshold;
-  step1_up = mali_dvfs[1].upthreshold;
-  step2_up = mali_dvfs[2].upthreshold;
-  step3_up = mali_dvfs[3].upthreshold;
-
-  step1_down = mali_dvfs[1].downthreshold;
-  step2_down = mali_dvfs[2].downthreshold;
-  step3_down = mali_dvfs[3].downthreshold;
-  step4_down = mali_dvfs[4].downthreshold;
 
         return count;
 }
